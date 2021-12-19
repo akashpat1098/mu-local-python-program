@@ -3,10 +3,11 @@ import pygame
 import time 
 import random 
  
-snake_speed = 15 
+snake_speed = 1
  
 # Window size 
 window_x = 720 
+
 window_y = 480 
  
 # defining colors 
@@ -22,9 +23,7 @@ pygame.init()
 # Initialise game window 
 pygame.display.set_caption('Snakes Master') 
 game_window = pygame.display.set_mode((window_x, window_y)) 
- 
- 
- 
+
 # FPS (frames per second) controller 
 fps = pygame.time.Clock() 
  

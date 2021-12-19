@@ -1,0 +1,5 @@
+f=open("prac.txt","r+")
+f.write("Hello world")
+content=f.readlines()
+print(content)
+f.close()
