@@ -91,34 +91,52 @@
 # print(saurabh.no_of_leaves)
 
 
-#Example of using mutable object in constructoe not as class variable
-class repository:
-	# package={}    #Dont use this as this will give error in using list by adding in same list of all instance
-	def __init__(self) -> None:
-		self.packages={}
-	def add_package(self,package):
-		self.packages[package.name]=package
+# #Example of using mutable object in constructoe not as class variable
+# class repository:
+# 	# package={}    #Dont use this as this will give error in using list by adding in same list of all instance
+# 	def __init__(self) -> None:
+# 		self.packages={}
+# 	def add_package(self,package):
+# 		self.packages[package.name]=package
 
-class package():
-	def __init__(self,Name) -> None:
-		self.name=Name
+# class package():
+# 	def __init__(self,Name) -> None:
+# 		self.name=Name
 
-vscode=package("vscode")
-git=package("Git")
-whatsapp=package("Whatsapp")
+# vscode=package("vscode")
+# git=package("Git")
+# whatsapp=package("Whatsapp")
 
-bombSquad=package("BombSquad")
-pubg=package("pubg")
-freefire=package("freefire")
+# bombSquad=package("BombSquad")
+# pubg=package("pubg")
+# freefire=package("freefire")
 
-Softwares=repository()
-Softwares.add_package(vscode)
-Softwares.add_package(git)
-Softwares.add_package(whatsapp)
-print(Softwares.packages.keys())
+# Softwares=repository()
+# Softwares.add_package(vscode)
+# Softwares.add_package(git)
+# Softwares.add_package(whatsapp)
+# print(Softwares.packages.keys())
 
-folder=repository()
-folder.add_package(bombSquad)
-folder.add_package(pubg)
-folder.add_package(freefire)
-print(folder.packages.keys())
+# folder=repository()
+# folder.add_package(bombSquad)
+# folder.add_package(pubg)
+# folder.add_package(freefire)
+# print(folder.packages.keys())
+
+# # Regular Expression example
+# import re
+# mytxt='''Tata Group is an Indian multinational conglomerate headquartered in Mumbai.
+# Founded in 1868 by Jamshedji Tata, the group gained international recognition after purchasing several global companies.
+# It is one of the biggest and oldest industrial groups in India.
+# Wikipedia
+# Founder: Jamsetji Tata
+# Founded: 1868, Mumbai
+# Headquarters: Mumbai
+# Customer service: 022 6665 8282
+# Subsidiaries: Tata Motors, Tata Steel Ltd, MORE
+# Parent organization: Tata Sons
+# '''
+# for i in re.findall("Founded:",mytxt):
+# 	print(i)
+a=1
+print(a!= (1 or 2 or 3))
