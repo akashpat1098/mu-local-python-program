@@ -8,7 +8,7 @@ print(guesses,"guesses left")
 while (guesses>=0):
     while (not choice.isnumeric()):
         print("Invalid Input")
-        choice=input("Enter The Number again")
+        choice=input("Enter The Number again:")
     if int(choice)>target:
         choice=input("Too high! Guess again:")
     elif int(choice)<target:

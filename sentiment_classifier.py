@@ -1,3 +1,4 @@
+# works properly
 def strip_punctuation(word):
     for i in punctuation_chars:
         word=word.replace(i,"")

@@ -1,4 +1,4 @@
-
+# code works properly but still has to handle some exception like typing wrong input and acessing file which is not created
 # method for getting dates
 def getdate():
     import datetime

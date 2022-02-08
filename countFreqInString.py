@@ -14,6 +14,7 @@ def countWordFreq(str1):
             freq_words[char]=0
         freq_words[char]=freq_words[char]+1
     return freq_words
+
 with open("para.txt","a+") as f:
     f.write("Hello world my name is Akash Patel\n")
     f.write("Studying in St.John College of Engineering")

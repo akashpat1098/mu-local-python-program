@@ -11,5 +11,5 @@ def fib_iterate(n):
         a,b=b,a+b
     return a
     # pass the index as argument
-print(fib_recurse(1)) 
-print(fib_iterate(1))
+print(fib_recurse(4)) 
+print(fib_iterate(4))

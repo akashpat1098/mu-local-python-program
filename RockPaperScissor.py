@@ -1,13 +1,20 @@
 import random
 rounds=5 
 comp_score,user_score=0,0
+user_choice=int()
 print(f"Comp:{comp_score},You:{user_score}")
 for i in range(rounds):
     choices=["Rock","Paper","Scissor"]
-    user_choice=int(input("Enter the 1 for Rock 2 for Paper and 3 for Scissor:"))
-    while user_choice!=1 or 2 or 3:
-        print("You entered the wrong input")
-        user_choice=int(input("Enter Again:1 for Rock 2 for Paper and 3 for Scissor:"))
+    while True:
+        try:
+            user_choice=int(input("Enter the 1 for Rock 2 for Paper and 3 for Scissor:"))
+        except ValueError:
+            print("You entered the wrong input.Please try again")
+            continue
+        if user_choice not in (1,2,3):
+            print("You entered the wrong input.Please try again")
+            continue
+        break
     print(f"You chose {choices[user_choice-1]}")
     comp_choice=random.choice(choices)
     print(f"Computer chose {comp_choice}")

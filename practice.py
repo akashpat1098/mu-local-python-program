@@ -136,7 +136,6 @@
 # Subsidiaries: Tata Motors, Tata Steel Ltd, MORE
 # Parent organization: Tata Sons
 # '''
-# for i in re.findall("Founded:",mytxt):
-# 	print(i)
-a=1
-print(a!= (1 or 2 or 3))
+# for i in re.findall(r"",mytxt):
+# 	print(i+" ",end="")
+
