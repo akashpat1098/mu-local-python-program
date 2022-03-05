@@ -138,4 +138,32 @@
 # '''
 # for i in re.findall(r"",mytxt):
 # 	print(i+" ",end="")
+# emails={"akash":"akashpatel1098@gmail.com","patel":"patelakash1098@gmail.com","sky":"onlyskymovie2020@gmail.com"}
+
+# '''These are the query i have to check, uncomment one at a time'''
+# query="hello email to harry"
+# # query="hello email to RDJ"
+# # query="hello email to Bruce"
+# # query="hello email to Thor"
+
+# '''it is the dictionary in which i have to check for a name'''
+# emails={"harry":"harry@gamil.com","RDJ":"RDJ@gamil.com","Bruce":"Bruce@gamil.com"}
+
+# name="none" #name is intialised here
+
+# '''these for loop initialise name with a key of dictionary emails if that key is in the   '''
+# for key in emails.keys():
+#     if key in query:
+#         name=key
+# str=f"email to {name}"
+# if str in query:
+#     print("Yes it is")
+# else:
+#     print("It is not")
+
+# # li=[emails[email] for email in emails if email in str ]
+
+
+
+# ----------------------------------
 
